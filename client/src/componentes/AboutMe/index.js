@@ -1,7 +1,6 @@
 import React from 'react'
 
-function About
-() {
+function About() {
   return (
     <h1>ABOUT ME</h1>
   )
