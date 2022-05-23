@@ -1,7 +1,8 @@
-import { LOCATION } from "./types";
+import { LOCATION, WEATHER } from "./types";
 
 const initialState = {
-    location: {}
+    location: {},
+    weather: []
 }
 
 export const reducer = (state = initialState, { type, payload }) => {
@@ -10,6 +11,11 @@ export const reducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 location: payload
+            }
+        case WEATHER:
+            return {
+                ...state,
+                weather: payload
             }
 
         default: return state
