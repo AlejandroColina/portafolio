@@ -34,9 +34,9 @@ const Mensaje = sequelize.define('Mensaje', {
     }
 });
 
-Persona.hasMany(Mensaje)
-Mensaje.belongsTo(Persona)
+Persona.hasMany(Mensaje, { foreignKey: 'id_persona' });
+Mensaje.belongsTo(Persona, { foreignKey: 'id_persona' });
 
 module.exports = {
-    sequelize
+    sequelize, Persona, Mensaje
 }
