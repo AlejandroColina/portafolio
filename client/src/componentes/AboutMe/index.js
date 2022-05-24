@@ -1,22 +1,17 @@
-import React, { useEffect } from 'react'
-import { getLocation, getWeather } from '../redux/action';
-import { useDispatch, useSelector } from 'react-redux';
+import React from 'react'
+import { useSelector } from 'react-redux';
+import Nav from '../Gerenals/NavBar';
 
 function About() {
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getLocation());
-  }, [dispatch]);
-  
   const { location } = useSelector(state => state);
-
-  useEffect(() => {
-    dispatch(getWeather(location.city))
-  }, [dispatch, location.city]);
-
   return (
     <>
+      <Nav
+        nombre1='Proyectos'
+        nombre2='Contactar'
+        link1='/projects'
+        link2='/contact'
+      />
       <h1>DATOS SOBRE LA UBICACIÓN</h1>
       <h3>Pais:</h3>
       <p>{location.country_name}</p>

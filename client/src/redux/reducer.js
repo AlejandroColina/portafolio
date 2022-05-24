@@ -2,7 +2,7 @@ import { LOCATION, WEATHER } from "./types";
 
 const initialState = {
     location: {},
-    weather: []
+    weather: {}
 }
 
 export const reducer = (state = initialState, { type, payload }) => {
