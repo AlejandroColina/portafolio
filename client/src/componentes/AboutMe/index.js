@@ -1,13 +1,12 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
 import Nav from '../Gerenals/NavBar';
 import Footer from './../Gerenals/Footer/index';
 import styles from './styles.module.css';
+import face from '../../assets/face.jpg'
 
 function About() {
-  const { location } = useSelector(state => state);
   return (
-    <section className={styles.principal}>
+    <div className={styles.principal}>
       <Nav
         nombre1='Proyectos'
         nombre2='Contactar'
@@ -15,15 +14,18 @@ function About() {
         link2='/contact'
       />
 
-      <h1>DATOS SOBRE LA UBICACIÓN</h1>
-      <h3>Pais:</h3>
-      <p>{location.country_name}</p>
-      <h3>Ciudad:</h3>
-      <p>{location.city}</p>
-      <h3>Indicativo Telefónico:</h3>
-      <p>{location.country_calling_code}</p>
+      <section className={styles.information}>
+        <div className={styles.imgs}>
+          <img 
+            src={face}
+            alt='face'
+          />
+        </div>
+      </section>
+
+
       <Footer />
-    </section>
+    </div>
   )
 }
 

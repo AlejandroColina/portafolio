@@ -1,21 +1,21 @@
 .navbar {
     border-bottom: 1px solid rgba(128, 128, 128, 0.664);
-    position: relative;
+    position: absolute;
     top: 0;
     height: 7vh;
     width: 100vw;
 }
 
-@media (max-width:500px) {
+@media (max-width:5000px) {
 
     .navbar {
-        background-color: black;
-        position: relative;
+        position: absolute;
         top: 0;
         height: 7vh;
         width: 100vw;
         display: grid;
         grid-template-columns: 50% 50%;
+        background-color: black;
     }
 
     .linkSection,

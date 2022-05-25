@@ -1,0 +1,47 @@
+.gif {
+    background-image: url('../../assets/starPc.gif');
+    height: 10vh;
+    width: 10vw;
+    position: absolute;
+}
+
+@media (max-width:5000px) {
+    .gif {
+        background-image: url('../../assets/starPc.gif');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .opacity {
+        background-color: rgba(0, 0, 0, 0.884);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+    }
+
+    .bottom {
+        min-height: 50px;
+        min-width: 140px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-style: oblique;
+        font-size: 2rem;
+        font-weight: bold;
+        transform: translate(10vw, 80vh);
+    }
+
+    .bottom:hover {
+        color: rgb(141, 141, 141);
+        opacity: 50%;
+    }
+}
