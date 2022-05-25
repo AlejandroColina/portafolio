@@ -1,20 +1,53 @@
 import React from 'react'
-import styles from './styles.modules.css';
+import styles from './styles.module.css';
+import face from '../../../assets/f.png';
+import instagram from '../../../assets/i.png';
+import twitter from '../../../assets/t.png';
 
 function Footer() {
   return (
     <footer className={styles.footer}>
 
       <section className={styles.redes}>
-        <div className={styles.circle}>F</div>
-        <div className={styles.circle}>I</div>
-        <div className={styles.circle}>T</div>
+        <a href='https://facebook.com' >
+
+          <div className={styles.circle}>
+            <img
+              className={styles.redesImg}
+              alt='facebook'
+              src={face}
+            />
+          </div>
+        </a>
+
+        <a href='https://instagram.com' >
+          <div className={styles.circle}>
+            <img
+              className={styles.redesImg}
+              alt='instagram'
+              src={instagram}
+            />
+          </div>
+        </a>
+
+        <a href='https://twitter.com' >
+          <div className={styles.circle}>
+            <img
+              className={styles.redesImg}
+              alt='twitter'
+              src={twitter}
+            />
+          </div>
+        </a>
       </section>
 
       <section className={styles.dev}>
-        <p className={styles.devP}>Developed by AC</p>
+        <a href='https://github.com/AlejandroColina'
+          className={styles.devA}>
+          Developed by AC
+        </a>
       </section>
-      
+
     </footer>
   )
 }

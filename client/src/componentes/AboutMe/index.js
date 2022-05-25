@@ -14,6 +14,7 @@ function About() {
         link1='/projects'
         link2='/contact'
       />
+
       <h1>DATOS SOBRE LA UBICACIÓN</h1>
       <h3>Pais:</h3>
       <p>{location.country_name}</p>
