@@ -1,0 +1,129 @@
+.gif {
+    background-image: url('../../assets/starPc.gif');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+}
+
+@media (max-width:5000px) {
+
+    .gif {
+        background-image: url('../../assets/starPc.gif');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+    }
+
+    .opacity {
+        background-color: rgba(0, 0, 0, 0.884);
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .bottom {
+        min-height: 50px;
+        min-width: 140px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-decoration: none;
+        font-style: oblique;
+        font-size: 2rem;
+        font-weight: bold;
+        transform: translate(10vw, 80vh);
+    }
+
+    .bottom:hover {
+        color: rgb(141, 141, 141);
+        opacity: 50%;
+    }
+
+    .principal {
+        display: grid;
+        height: 60%;
+        width: 80vw;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: 50% 50%;
+    }
+
+    .principal1 {
+        height: 100%;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: 70% 30%;
+        color: aliceblue;
+    }
+
+    .principal1 .name {
+        margin: 0 auto;
+        height: 100%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .name h1 {
+        font-size: 3rem;
+        color: white;
+    }
+
+    .text p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .principal2 {
+        border: 1px solid green;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: 50% 50%;
+        color: aliceblue;
+    }
+
+    .principal2 .redes {
+        border: 1px solid pink;
+        height: 100%;
+        width: 80%;
+    }
+
+    .btn {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btnPrincipal {
+        height: 40px;
+        width: 130px;
+        border: 1px solid white;
+        border-radius: 4px;
+        background-color: transparent;
+        color: white;
+    }
+
+}

@@ -1,5 +1,9 @@
 .principal {
-    height: 100vh;
+    top: 180vh;
+    min-height: 100vh;
     width: 100vw;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

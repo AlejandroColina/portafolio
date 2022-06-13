@@ -6,7 +6,7 @@ import twitter from '../../../assets/t.png';
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.footer} id='Footer'>
 
       <section className={styles.redes}>
         <a href='https://facebook.com' >

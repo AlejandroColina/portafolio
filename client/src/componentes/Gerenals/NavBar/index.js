@@ -1,17 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from './styles.module.css';
 
-function Nav({ nombre1, nombre2, link1, link2 }) {
+function Nav() {
   const { weather, location } = useSelector(state => state);
   return (
     <nav className={styles.navbar}>
 
       <section className={styles.linkSection}>
         <ul className={styles.list}>
-          <Link className={styles.link} to={link1} > <li>{nombre1}</li></Link>
-          <Link className={styles.link} to={link2} > <li>{nombre2}</li></Link>
+          <Link className={styles.link} to="#Landing" >{`<Alejandro />`}</Link>
+          <Link className={styles.link} to="#About" > About me</Link>
+          <Link className={styles.link} to="#Projects" > Projects</Link>
+          <Link className={styles.link} to="#Footer" > Footer</Link>
         </ul>
       </section>
 
@@ -23,7 +25,7 @@ function Nav({ nombre1, nombre2, link1, link2 }) {
           <p className={styles.wordsLocation}>{location.city}, {location.country_code_iso3}</p>
         </div>
       </section>
-      
+
     </nav>
   )
 }

@@ -9,13 +9,15 @@
 @media (max-width:5000px) {
 
     .navbar {
-        position: absolute;
+        z-index: 4;
+        position: fixed;
         top: 0;
         height: 7vh;
         width: 100vw;
         display: grid;
         grid-template-columns: 50% 50%;
-        background-color: black;
+        color: black;
+        background-color: #e9ecef42;
     }
 
     .linkSection,
@@ -37,13 +39,16 @@
 
     .list li {
         list-style: none;
-        color: white;
+        color: black;
     }
 
     .link {
         text-decoration: none;
+        color: black;
     }
-    .wordsTemp, .wordsLocation{
+
+    .wordsTemp,
+    .wordsLocation {
         color: white;
     }
 

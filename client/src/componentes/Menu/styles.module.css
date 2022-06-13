@@ -1,0 +1,45 @@
+.navBar {
+    position: relative;
+}
+
+.ulNav1 {
+    width: 100vw;
+    height: 20px;
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    background: darkcyan;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.btnNav {
+    position: relative;
+    left: 40px;
+    top: 40px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.ulNav2 {
+    width: 100vw;
+    height: 360px;
+    overflow-y: scroll;
+    list-style: none;
+    position: fixed;
+    background: darkcyan;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.btnNav {
+
+}
+
+.ulNav1 li:first-child {
+    margin-top: 7rem;
+  }
