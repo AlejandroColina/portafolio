@@ -5,8 +5,8 @@ import styles from './styles.module.css';
 import About from './../AboutMe/index';
 import Projects from './../Project/index';
 import Footer from './../Gerenals/Footer/index';
-import Nav from './../Gerenals/NavBar/index';
 import LandingP from './../Star/index';
+// import Nav from './../Gerenals/NavBar/index';
 
 function Landing() {
 
@@ -22,7 +22,7 @@ function Landing() {
 
     return (
         <div className={styles.container}>
-            <Nav />
+            {/* <Nav /> */}
             <LandingP />
             <About />
             <Projects />

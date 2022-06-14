@@ -23,7 +23,7 @@
     }
 
     .opacity {
-        background-color: rgba(0, 0, 0, 0.884);
+        background-color: rgba(44, 172, 140, 0.651);
         height: 100vh;
         width: 100vw;
         position: relative;
@@ -56,7 +56,7 @@
     .principal {
         display: grid;
         height: 60%;
-        width: 80vw;
+        width: 60%;
         align-items: center;
         justify-content: center;
         grid-template-rows: 50% 50%;
@@ -72,7 +72,7 @@
         color: aliceblue;
     }
 
-    .principal1 .name {
+    .name {
         margin: 0 auto;
         height: 100%;
         width: 60%;
@@ -93,20 +93,22 @@
     }
 
     .principal2 {
-        border: 1px solid green;
         height: 100%;
         width: 100%;
-        display: grid;
-        align-items: center;
-        justify-content: center;
-        grid-template-rows: 50% 50%;
         color: aliceblue;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-rows: 50% 50%;
     }
-
-    .principal2 .redes {
-        border: 1px solid pink;
+    
+    .redes {
         height: 100%;
-        width: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .btn {
@@ -117,13 +119,32 @@
         justify-content: center;
     }
 
+    .reds {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
     .btnPrincipal {
         height: 40px;
-        width: 130px;
-        border: 1px solid white;
+        width: 180px;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid white;
         border-radius: 4px;
         background-color: transparent;
         color: white;
+        font-size: 1rem;
+    }
+
+    .btnPrincipal:hover {
+        background-color: whitesmoke;
+        color: black;
     }
 
 }
