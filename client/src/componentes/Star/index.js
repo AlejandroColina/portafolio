@@ -3,7 +3,7 @@ import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 import linkedIn from '../../assets/linked.ico';
 import gitHub from '../../assets/git.ico';
-import Typewriter from "typewriter-effect";
+import TypeWriterEffect from 'react-typewriter-effect';
 
 function LandingP() {
     let urlLinkedIn = 'https://www.linkedin.com/in/alejandro-colina-18b84671/';
@@ -18,7 +18,13 @@ function LandingP() {
                             <h1>Alejandro Colina</h1>
                         </div>
                         <div className={styles.text}>
-                            <p>Apasionado sobre cambiar el mundo con tecnología.</p>
+                        <TypeWriterEffect
+                        textStyle={{ fontFamily: 'Barlow' }}
+                        typeSpeed={50}
+            startDelay={100}
+            cursorColor="white"
+                        text={'Apasionado sobre cambiar el mundo con tecnología.'}
+                        />
                         </div>
                     </div>
 
