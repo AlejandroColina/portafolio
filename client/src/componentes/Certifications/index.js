@@ -3,7 +3,8 @@ import styles from './styles.module.css';
 import { certificados } from '../Project/infoCards';
 
 function Certificacions() {
-    const [index, setIndex] = useState(0)
+    let [index, setIndex] = useState(0);
+
     const handlePrev = () => {
         index > 1
             ? setIndex(index - 1)
@@ -21,7 +22,10 @@ function Certificacions() {
                 <h2>Certificaciones</h2>
             </div>
             <div className={styles.div_slider}>
-                <img className={styles.imgs} alt='pht' src={certificados[index]} />
+                <img className={styles.imgs}
+                    alt='certificados'
+                    src={certificados[index]}
+                />
             </div>
             <div className={styles.div_btns}>
                 <button

@@ -7,9 +7,7 @@ import Nav from './componentes/Gerenals/NavBar/index';
 import Footer from './componentes/Gerenals/Footer/index';
 import { useDispatch, useSelector } from 'react-redux';
 import { getLocation, getWeather } from './redux/action';
-// import { Route, Switch } from 'react-router-dom';
-// import Error from './componentes/Error/index';
-// import Landing from './componentes/LandingPage/index';
+import WhatsApp from './componentes/Gerenals/WhatsApp/index';
 
 function App() {
   const dispatch = useDispatch();
@@ -29,6 +27,7 @@ function App() {
       <About />
       <Projects />
       <Certificacions />
+      <WhatsApp />
       <Footer />
     </div>
   );

@@ -1,5 +1,5 @@
 .navbar {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.664);
+    border-bottom: 1px solid #e9ecefc9;
     position: absolute;
     top: 0;
     height: 7vh;
@@ -8,7 +8,22 @@
 
 @media (max-width:5000px) {
 
-    .navbar {
+    .navbar1 {
+        display: none;
+        z-index: 4;
+        position: fixed;
+        top: 0;
+        height: 7vh;
+        width: 100vw;
+        /* display: grid; */
+        grid-template-columns: 50% 50%;
+        font-weight: bold;
+        transition: 1s;
+        color: black;
+        background-color: transparent;
+    }
+
+    .navbar2 {
         z-index: 4;
         position: fixed;
         top: 0;
@@ -16,8 +31,23 @@
         width: 100vw;
         display: grid;
         grid-template-columns: 50% 50%;
+        font-weight: bold;
+        transition: 2s;
         color: black;
-        background-color: #e9ecef42;
+        border-bottom: 1px solid #c0c0c0c9;
+        background-color: #e9ecefc9;
+        animation: identifier 1s linear;
+    }
+
+    @keyframes identifier {
+        0% {
+            opacity: 0;
+            transform: translateY(1rem)
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0)
+        }
     }
 
     .linkSection,
@@ -49,7 +79,8 @@
 
     .wordsTemp,
     .wordsLocation {
-        color: white;
+        color: black;
+        font-weight: bold;
     }
 
 }
