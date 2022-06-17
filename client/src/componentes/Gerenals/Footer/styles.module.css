@@ -1,6 +1,6 @@
 .footer {
     position: absolute;
-    top: 505vh;
+    top: 605vh;
     height: 70vh;
     width: 100vw;
     display: grid;
@@ -13,7 +13,7 @@
     .footer {
         position: absolute;
         background-color: #e9ecef;
-        top: 505vh;
+        top: 605vh;
         height: 70vh;
         width: 100vw;
         display: flex;
@@ -41,11 +41,16 @@
         margin-right: 8px;
     }
 
-    .sect2 a{
+    .sect2 a {
         color: black;
     }
 
     .sect3 {
         font-size: 1.3rem;
+    }
+
+    .sect3 img {
+        height: 18px;
+        width: 18px;
     }
 }

@@ -3,6 +3,7 @@ import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 import linkedIn from '../../assets/linked.ico';
 import gitHub from '../../assets/git.ico';
+import Typewriter from "typewriter-effect";
 
 function LandingP() {
     let urlLinkedIn = 'https://www.linkedin.com/in/alejandro-colina-18b84671/';

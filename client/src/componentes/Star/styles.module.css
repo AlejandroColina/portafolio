@@ -90,6 +90,8 @@
     .text p {
         text-align: center;
         font-size: 1rem;
+        position: relative;
+
     }
 
     .principal2 {
@@ -101,7 +103,7 @@
         align-items: center;
         grid-template-rows: 50% 50%;
     }
-    
+
     .redes {
         height: 100%;
         width: 100%;

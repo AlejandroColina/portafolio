@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import LandingP from './componentes/Star/index';
 import About from './componentes/AboutMe/index';
 import Projects from './componentes/Project/index';
+import Certificacions from './componentes/Certifications/index';
 // import Nav from './componentes/Gerenals/NavBar/index';
 import Footer from './componentes/Gerenals/Footer/index';
 import { useDispatch, useSelector } from 'react-redux';
@@ -26,6 +27,7 @@ function App() {
       <LandingP />
       <About />
       <Projects />
+      <Certificacions />
       <Footer />
     </div>
   );
