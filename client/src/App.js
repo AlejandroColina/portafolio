@@ -3,7 +3,7 @@ import LandingP from './componentes/Star/index';
 import About from './componentes/AboutMe/index';
 import Projects from './componentes/Project/index';
 import Certificacions from './componentes/Certifications/index';
-// import Nav from './componentes/Gerenals/NavBar/index';
+import Nav from './componentes/Gerenals/NavBar/index';
 import Footer from './componentes/Gerenals/Footer/index';
 import { useDispatch, useSelector } from 'react-redux';
 import { getLocation, getWeather } from './redux/action';
@@ -24,6 +24,7 @@ function App() {
   }, [dispatch, location.city]);
   return (
     <div className="App">
+      <Nav />
       <LandingP />
       <About />
       <Projects />

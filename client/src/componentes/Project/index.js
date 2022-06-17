@@ -1,12 +1,12 @@
 import React from 'react'
-import infoCards from './infoCards';
+import { infoCards } from './infoCards';
 import styles from './styles.module.css';
 
 function Projects() {
     return (
         <section className={styles.principal} id='Projects'>
             <div className={styles.subPrincipal_uno} >
-                <h2 >{'My Projects'}</h2>
+                <h2 >{'Mis Proyectos'}</h2>
             </div>
             <div className={styles.subPrincipal_dos}>
                 {

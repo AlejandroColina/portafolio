@@ -19,7 +19,7 @@ function LandingP() {
                         </div>
                         <div className={styles.text}>
                         <TypeWriterEffect
-                        textStyle={{ fontFamily: 'Barlow' }}
+                        textStyle={{ fontFamily: 'Barlow', textAlign:'center', fontSize:'1rem' }}
                         typeSpeed={50}
             startDelay={100}
             cursorColor="white"
