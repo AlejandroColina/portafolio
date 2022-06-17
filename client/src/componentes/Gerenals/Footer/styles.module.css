@@ -1,54 +1,51 @@
 .footer {
     position: absolute;
-    top: 280vh;
-    height: 50vh;
+    top: 505vh;
+    height: 70vh;
     width: 100vw;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
     background-color: #e9ecef;
 }
+
 
 @media (max-width:5000px) {
     .footer {
         position: absolute;
-        top: 280vh;
-        height: 50vh;
-        width: 100vw;
-        display: grid;
-        grid-template-columns: 50% 50%;
         background-color: #e9ecef;
-    }
-
-    .redes,
-    .dev {
-        height: 100%;
-        width: 100%;
+        top: 505vh;
+        height: 70vh;
+        width: 100vw;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    .circle {
-        height: 25px;
-        width: 25px;
-        border-radius: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        text-align: center;
         justify-content: center;
     }
 
-    .redesImg {
-        height: 25px;
+    .container {
+        height: 70vh;
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        background-color: #e9ecef;
+        text-align: center;
+        justify-content: space-evenly;
     }
 
-    .redesP {
-        color: white;
+    .sect1 {
+        font-size: 2rem;
+        font-weight: bold;
     }
-}
 
-.devA {
-    text-decoration: none;
-    color: white;
+    .sect2 {
+        font-size: 1.3rem;
+        margin-right: 8px;
+    }
+
+    .sect2 a{
+        color: black;
+    }
+
+    .sect3 {
+        font-size: 1.3rem;
+    }
 }

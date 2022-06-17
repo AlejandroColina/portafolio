@@ -1,4 +1,4 @@
-import { LOCATION, WEATHER } from './types';
+import { LOCATION, WEATHER, INFO_CARDS } from './types';
 import axios from 'axios';
 
 export const getLocation = () => {
@@ -24,6 +24,18 @@ export const getWeather = (city) => {
             }
         } catch (error) {
             console.error('PROBLEM IN ACTION GETWEATHER', error);
+        }
+    }
+}
+
+export const getInfoCards = () => {
+    return async (dispatch) => {
+        try {
+            return axios(`http://localhost:3001/cards`)
+                .then(res => { dispatch({ type: INFO_CARDS, payload: res.data }) })
+                .catch(err => console.log(err))
+        } catch (error) {
+            console.error('PROBLEN IN ACTION INFO_CARDS', error);
         }
     }
 }

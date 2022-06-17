@@ -140,6 +140,7 @@
         background-color: transparent;
         color: white;
         font-size: 1rem;
+        transition: 1s;
     }
 
     .btnPrincipal:hover {
