@@ -1,14 +1,159 @@
-.principal {
-    top: 180vh;
-    height: 325vh;
-    width: 100vw;
-    position: absolute;
-    display: grid;
-    grid-template-rows: 15% 85%;
-    background-color: #f8f9fa;
+
+
+@media(min-width: 600px) {
+    .principal {
+        top: 180vh;
+        height: 410vh;
+        width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-rows: 5% 95%;
+        background-color: #f8f9fa;
+    }
+
+    .subPrincipal_uno {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subPrincipal_uno h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .subPrincipal_dos {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .divProject {
+        border: 1px solid #c0c0c0;
+        border-radius: 6px;
+        margin: 12px;
+        height: 70vh;
+        width: 50vw;
+        box-shadow: 0 0 5px 3px #d6d6d6;
+        display: grid;
+        grid-template-rows: 60% 40%;
+    }
+
+    .imgApp {
+        height: 90%;
+        width: 100%;
+    }
+
+    .imgApp img {
+        border-radius: 6px 6px 0px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info {
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
 }
 
-@media(max-width: 5000px) {
+@media(min-width: 1000px) {
+    .principal {
+        top: 180vh;
+        height: 300vh;
+        width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-rows: 10% 90%;
+        background-color: #f8f9fa;
+    }
+
+    .subPrincipal_uno {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subPrincipal_uno h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .subPrincipal_dos {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .divProject {
+        border: 1px solid #c0c0c0;
+        border-radius: 6px;
+        margin: 12px;
+        height: 70vh;
+        width: 40vw;
+        box-shadow: 0 0 5px 3px #d6d6d6;
+        display: grid;
+        grid-template-rows: 60% 40%;
+    }
+
+    .imgApp {
+        height: 90%;
+        width: 100%;
+    }
+
+    .imgApp img {
+        border-radius: 6px 6px 0px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .info {
+        height: 100%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+
+}
+
+@media(max-width: 600px) {
     .principal {
         position: absolute;
         top: 180vh;

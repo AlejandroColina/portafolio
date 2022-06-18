@@ -18,13 +18,13 @@ function LandingP() {
                             <h1>Alejandro Colina</h1>
                         </div>
                         <div className={styles.text}>
-                        <TypeWriterEffect
-                        textStyle={{ fontFamily: 'Barlow', textAlign:'center', fontSize:'1rem' }}
-                        typeSpeed={50}
-            startDelay={100}
-            cursorColor="white"
-                        text={'Apasionado sobre cambiar el mundo con tecnología.'}
-                        />
+                            <TypeWriterEffect
+                                textStyle={{ fontWeight: 'lighter', fontFamily: 'Barlow', textAlign: 'center', fontSize: '1.2rem' }}
+                                typeSpeed={50}
+                                startDelay={100}
+                                cursorColor="white"
+                                text={'Apasionado en comprender el mundo de la tecnología.'}
+                            />
                         </div>
                     </div>
 

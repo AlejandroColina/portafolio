@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import LandingP from './componentes/Star/index';
+import LandingP from './componentes/Start/index';
 import About from './componentes/AboutMe/index';
 import Projects from './componentes/Project/index';
 import Certificacions from './componentes/Certifications/index';
