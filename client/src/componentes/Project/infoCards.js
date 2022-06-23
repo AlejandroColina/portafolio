@@ -23,7 +23,7 @@ let infoCards = [
     {
         title: "Portafolio",
         image: "https://res.cloudinary.com/dojsvmsif/image/upload/v1655412137/Personal/portfolio_zp0dwd.jpg",
-        description: "Portafolio en el cuál expongo información personal y trabajos realizados. Esta hecho con React JS, Node JS.",
+        description: "APP en la cuál expongo información personal y trabajos realizados. Esta hecho con React JS, Node JS, Tailwindcss.",
         deploy: "",
         repo: "https://github.com/AlejandroColina/portafolio"
     },

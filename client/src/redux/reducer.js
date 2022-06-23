@@ -1,9 +1,10 @@
-import { LOCATION, WEATHER, INFO_CARDS } from "./types";
+import { LOCATION, WEATHER, INFO_CARDS, CERTIFICADOS } from "./types";
 
 const initialState = {
     location: {},
     weather: {},
-    infoCards: []
+    infoCards: [],
+    certificates: []
 }
 
 export const reducer = (state = initialState, { type, payload }) => {
@@ -23,6 +24,12 @@ export const reducer = (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 infoCards: payload
+            }
+
+        case CERTIFICADOS:
+            return {
+                ...state,
+                certificates: payload
             }
 
         default: return state

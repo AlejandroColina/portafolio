@@ -1,4 +1,4 @@
-import { LOCATION, WEATHER, INFO_CARDS } from './types';
+import { LOCATION, WEATHER, INFO_CARDS, CERTIFICADOS } from './types';
 import axios from 'axios';
 
 export const getLocation = () => {
@@ -31,7 +31,7 @@ export const getWeather = (city) => {
 export const getInfoCards = () => {
     return async (dispatch) => {
         try {
-            return axios(`http://localhost:3001/cards`)
+            return axios.get(`http://localhost:3001/cards`)
                 .then(res => { dispatch({ type: INFO_CARDS, payload: res.data }) })
                 .catch(err => console.log(err))
         } catch (error) {
@@ -40,4 +40,15 @@ export const getInfoCards = () => {
     }
 }
 
+export const getCertificates = () => {
+    return async (dispatch) => {
+        try {
+            return axios.get(`http://localhost:3001/certificates`)
+                .then(res => { dispatch({ type: CERTIFICADOS, payload: res.data }) })
+                .catch(err => console.log(err))
+        } catch (error) {
+            console.error('PROBLEN IN ACTION CERTIFICADOS', error);
+        }
+    }
+}
 //

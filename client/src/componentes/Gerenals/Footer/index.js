@@ -1,22 +1,22 @@
 import React from 'react'
 import bh from '../../../assets/blackHeart.webp'
-// import styles from './styles.module.css';
 
 function Footer() {
   return (
     <footer className="
     border-t border-gray-200  
     flex justify-center items-center flex-col
-    px-4
+    px-4 mt-6
     bg-gradient-to-b from-white to-gray-400
     "
-      id='Footer'>{/*footer*/}
-      
+      id='Footer'>
+
       <h1 className="
-        text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl mt-4 md:mt-8
+        text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl 
+        mt-4 md:mt-8
         font-light py-4 mx-auto">
         Póngase en contacto
-      </h1>{/*sect1*/}
+      </h1>
 
       <p className="
         text-base sm:text-sm lg:text-lg xl:text-xl
@@ -24,8 +24,11 @@ function Footer() {
         
         md:mx-8
         "
-      >{/*sect2*/}
-        ¡Actualmente estoy buscando oportunidades en desarrollo de software! Si conoce algún puesto disponible, si tiene alguna pregunta o si solo quiere saludar, no dude en enviarme un correo electrónico a <a href='www.gmail.com'>alejo_9102@hotmail.com</a>
+      >
+        ¡Actualmente estoy buscando oportunidades en desarrollo de software!
+        Si conoce algún puesto disponible, si tiene alguna pregunta o si solo quiere saludar,
+        no dude en enviarme un correo electrónico a
+        <a className='hover:font-bold' href='www.gmail.com'> alejo_9102@hotmail.com</a>
       </p>
 
       <p className="

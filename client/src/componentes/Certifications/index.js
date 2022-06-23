@@ -1,19 +1,26 @@
-import React, { useState } from 'react'
-import { certificados } from '../Project/infoCards';
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination } from 'swiper';
+import { useSelector } from 'react-redux';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 function Certificacions() {
-    let [index, setIndex] = useState(0);
+    const { certificates } = useSelector(state => state);
+    // let [index, setIndex] = useState(0);
 
-    const handlePrev = () => {
-        index > 1
-            ? setIndex(index - 1)
-            : setIndex(0)
-    }
-    const handleNext = () => {
-        index >= certificados?.length - 1
-            ? setIndex(certificados.length - 1)
-            : setIndex(index + 1)
-    }
+    // const handlePrev = () => {
+    //     index > 1
+    //         ? setIndex(index - 1)
+    //         : setIndex(0)
+    // }
+    // const handleNext = () => {
+    //     index >= certificates?.length - 1
+    //         ? setIndex(certificates.length - 1)
+    //         : setIndex(index + 1)
+    // }
 
     return (
         <div id='Certifications' className="w-full min-h-full ">{/*principal*/}
@@ -23,51 +30,32 @@ function Certificacions() {
                 text-center font-light
                 mx-auto mt-4 md:mt-8 py-4'
             >Certificaciones</h2>
-            
+
             <div className="
-            h-2/6 w-4/6 lg:h-4/6 lg:w-4/6 mt-4 
+            h-2/6 w-4/6 md:h-3/6 md:w-3/6 mt-4 
             mx-auto
             ">
-                <img className="w-full h-full rounded-lg "
-                    alt='certificados'
-                    src={certificados[index]}
-                />{/*imgs*/}
-
-                <div className="
-                h-12 w-full 
-                z-10 -translate-y-[25vh] sm:-translate-y-[40vh] md:-translate-y-[44vh] lg:-translate-y-[75vh]
-                flex justify-between items-center 
-                mx-auto
-                "
+                <Swiper
+                    modules={[Navigation, Pagination]}
+                    navigation
+                    pagination={{ clickable: true }}
+                    spaceBetween={50}
+                    slidesPerView={1}
                 >
-                    <button
-                        onClick={handlePrev}
-                        disabled={index <= 0 ? true : false}
-                        className="
-                        h-10 w-10 bg-gray-400 text-black border text-base sm:text-sm md:text-lg mb-2 
-                        border-gray-300 rounded-full 
-                        hover:bg-gray-800 hover:text-white 
-                        transition duration-1000"
-                    >{/*btnImg*/}
-                        {'<'}
-
-                    </button>
-                    <button
-                        onClick={handleNext}
-                        disabled={index >= certificados.length - 1 ? true : false}
-                        className="
-                        h-10 w-10 bg-gray-400 text-black border text-base sm:text-sm md:text-lg mb-2 
-                        border-gray-300 rounded-full 
-                        hover:bg-gray-800 hover:text-white 
-                        transition duration-1000"
-                    >{/*btnImg*/}
-                        {'>'}
-                    </button>
-                </div>
+                    {
+                        certificates?.map((img, index) => {
+                            return (
+                                <SwiperSlide key={index}>
+                                    <img className='h-full w-full' src={img} alt="cert" />
+                                </SwiperSlide>
+                            )
+                        })
+                    }
+                </Swiper>
             </div>
-
         </div>
     )
 }
 
 export default Certificacions;
+
