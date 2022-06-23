@@ -1,6 +1,5 @@
 import React from 'react'
 import { infoCards } from './infoCards';
-// import styles from './styles.module.css';
 
 function Projects() {
     return (
@@ -22,8 +21,8 @@ function Projects() {
                                 </div>
                                 <hr className='w-4/5 mx-auto my-2' />
                                 <div className="h-14 w-full flex justify-evenly items-center " >{/*info*/}
-                                    <button className='h-8 w-24 border text-base sm:text-sm md:text-lg mb-2 border-gray-500 rounded-sm hover:bg-gray-400 hover:text-white transition duration-1000' >Deploy</button>
-                                    <button className='h-8 w-24 border text-base sm:text-sm md:text-lg mb-2 border-gray-500 rounded-sm hover:bg-gray-400 hover:text-white transition duration-1000' >GitHub</button>
+                                    <a href={app?.deploy} className='h-8 w-24 border text-base text-center sm:text-sm md:text-lg mb-2 border-gray-500 rounded-sm hover:bg-gray-400 hover:text-white transition duration-1000' >Deploy</a>
+                                    <a href={app?.repo} className='h-8 w-24 border text-base text-center sm:text-sm md:text-lg mb-2 border-gray-500 rounded-sm hover:bg-gray-400 hover:text-white transition duration-1000' >GitHub</a>
                                 </div>
                             </div>
                         )

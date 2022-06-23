@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { certificados } from '../Project/infoCards';
-// import styles from './styles.module.css';
 
 function Certificacions() {
     let [index, setIndex] = useState(0);
@@ -24,7 +23,7 @@ function Certificacions() {
                 text-center font-light
                 mx-auto mt-4 md:mt-8 py-4'
             >Certificaciones</h2>
-
+            
             <div className="
             h-2/6 w-4/6 lg:h-4/6 lg:w-4/6 mt-4 
             mx-auto
@@ -36,7 +35,7 @@ function Certificacions() {
 
                 <div className="
                 h-12 w-full 
-                z-10 -translate-y-[25vh] sm:-translate-y-[40vh] md:-translate-y-[55vh] lg:-translate-y-[75vh]
+                z-10 -translate-y-[25vh] sm:-translate-y-[40vh] md:-translate-y-[44vh] lg:-translate-y-[75vh]
                 flex justify-between items-center 
                 mx-auto
                 "
@@ -66,6 +65,7 @@ function Certificacions() {
                     </button>
                 </div>
             </div>
+
         </div>
     )
 }
