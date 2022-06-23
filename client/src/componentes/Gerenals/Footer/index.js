@@ -1,21 +1,45 @@
 import React from 'react'
-import styles from './styles.module.css';
 import bh from '../../../assets/blackHeart.webp'
+// import styles from './styles.module.css';
 
 function Footer() {
   return (
-    <footer className={styles.footer} id='Footer'>
-      <div className={styles.container}>
-        <h1 className={styles.sect1}>Póngase en contacto</h1>
+    <footer className="
+    border-t border-gray-200  
+    flex justify-center items-center flex-col
+    px-4
+    bg-gradient-to-b from-white to-gray-400
+    "
+      id='Footer'>{/*footer*/}
+      
+      <h1 className="
+        text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-7xl mt-4 md:mt-8
+        font-light py-4 mx-auto">
+        Póngase en contacto
+      </h1>{/*sect1*/}
 
-        <p className={styles.sect2}>
-          ¡Actualmente estoy buscando oportunidades en desarrollo de software! Si conoce algún puesto disponible, si tiene alguna pregunta o si solo quiere saludar, no dude en enviarme un correo electrónico a <a href='www.gmail.com'>alejo_9102@hotmail.com</a>
-        </p>
+      <p className="
+        text-base sm:text-sm lg:text-lg xl:text-xl
+        text-center
+        
+        md:mx-8
+        "
+      >{/*sect2*/}
+        ¡Actualmente estoy buscando oportunidades en desarrollo de software! Si conoce algún puesto disponible, si tiene alguna pregunta o si solo quiere saludar, no dude en enviarme un correo electrónico a <a href='www.gmail.com'>alejo_9102@hotmail.com</a>
+      </p>
 
-        <p className={styles.sect3}><b>{`</>`}, con <img src={bh}alt='heart'/> por Alejandro Colina usando React JS</b></p>
-      </div>
-    </footer>
+      <p className="
+        text-base sm:text-sm text-center
+        my-8
+        ">
+        <b>
+          {`</>`}  Con {<img className='h-6 w-6 inline' src={bh} alt='heart' />} por Alejandro Colina usando React JS
+        </b>
+      </p>
+
+    </footer >
   )
 }
 
 export default Footer
+

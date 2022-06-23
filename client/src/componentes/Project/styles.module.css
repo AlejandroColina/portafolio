@@ -1,9 +1,7 @@
-
-
-@media(min-width: 600px) {
+@media (max-width:360px) {
     .principal {
         top: 180vh;
-        height: 410vh;
+        height: 370vh;
         width: 100vw;
         position: absolute;
         display: grid;
@@ -32,21 +30,32 @@
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .divProject {
         border: 1px solid #c0c0c0;
         border-radius: 6px;
         margin: 12px;
-        height: 70vh;
-        width: 50vw;
-        box-shadow: 0 0 5px 3px #d6d6d6;
+        height: 400px;
+        width: 300px;
+        box-shadow: 0 5px 14px 8px #d6d6d6;
         display: grid;
-        grid-template-rows: 60% 40%;
+        grid-template-rows: 50% 50%;
     }
 
     .imgApp {
-        height: 90%;
+        height: 100%;
         width: 100%;
+    }
+
+    .info {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: justify;
     }
 
     .imgApp img {
@@ -55,16 +64,6 @@
         width: 100%;
     }
 
-    .info {
-        height: 100%;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: justify;
-    }
 
     .info h2 {
         font-size: 1.5rem;
@@ -76,11 +75,163 @@
 
 }
 
-@media(min-width: 1000px) {
+@media screen and (min-width:361px) and (max-width:767px) {
+    .principal {
+        top: 1318px;
+        height: 410vh;
+        width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-rows: 5% 95%;
+        background-color: #f8f9fa;
+    }
+
+    .subPrincipal_uno {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subPrincipal_uno h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .subPrincipal_dos {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .divProject {
+        border: 1px solid #c0c0c0;
+        border-radius: 6px;
+        margin: 12px;
+        height: 450px;
+        width: 350px;
+        box-shadow: 0 5px 14px 8px #d6d6d6;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+
+    .imgApp {
+        height: 100%;
+        width: 100%;
+    }
+
+    .info {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .imgApp img {
+        border-radius: 6px 6px 0px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
     .principal {
         top: 180vh;
-        height: 300vh;
+        height: 410vh;
         width: 100vw;
+        position: absolute;
+        display: grid;
+        grid-template-rows: 5% 95%;
+        background-color: #f8f9fa;
+    }
+
+    .subPrincipal_uno {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subPrincipal_uno h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .subPrincipal_dos {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .divProject {
+        border: 1px solid #c0c0c0;
+        border-radius: 6px;
+        margin: 12px;
+        height: 450px;
+        width: 350px;
+        box-shadow: 0 5px 14px 8px #d6d6d6;
+        display: grid;
+        grid-template-rows: 50% 50%;
+    }
+
+    .imgApp {
+        height: 100%;
+        width: 100%;
+    }
+
+    .info {
+        height: 100%;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .imgApp img {
+        border-radius: 6px 6px 0px 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .info h2 {
+        font-size: 1.5rem;
+    }
+
+    .info p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .principal {
+        top: 180vh;
+        height: 270vh;
+            width: 100vw;
         position: absolute;
         display: grid;
         grid-template-rows: 10% 90%;
@@ -96,117 +247,38 @@
     }
 
     .subPrincipal_uno h2 {
-        font-size: 3rem;
+        font-size: 5rem;
         text-align: center;
     }
 
     .subPrincipal_dos {
         height: 100%;
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
     .divProject {
         border: 1px solid #c0c0c0;
         border-radius: 6px;
         margin: 12px;
-        height: 70vh;
-        width: 40vw;
-        box-shadow: 0 0 5px 3px #d6d6d6;
-        display: grid;
-        grid-template-rows: 60% 40%;
-    }
-
-    .imgApp {
-        height: 90%;
-        width: 100%;
-    }
-
-    .imgApp img {
-        border-radius: 6px 6px 0px 0px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .info {
-        height: 100%;
-        width: 80%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: justify;
-    }
-
-    .info h2 {
-        font-size: 1.5rem;
-    }
-
-    .info p {
-        font-size: 1rem;
-    }
-
-}
-
-@media(max-width: 600px) {
-    .principal {
-        position: absolute;
-        top: 180vh;
-        height: 325vh;
-        width: 100vw;
-        display: grid;
-        grid-template-rows: 6% 94%;
-        justify-content: space-evenly;
-        background-color: #f8f9fa;
-    }
-
-    .subPrincipal_uno {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .subPrincipal_uno h2 {
-        font-size: 3rem;
-        text-align: center;
-    }
-
-    .subPrincipal_dos {
-        height: 100%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .divProject {
-        border: 1px solid #c0c0c0;
-        border-radius: 6px;
-        margin: 12px 0;
-        height: 75vh;
-        width: 85vw;
-        box-shadow: 0 0 5px 3px #d6d6d6;
+        height: 60vh;
+        width: 30vw;
+        box-shadow: 0px 15px 18px 10px #d6d6d6;
         display: grid;
         grid-template-rows: 50% 50%;
     }
 
     .imgApp {
-        height: 90%;
+        height: 100%;
         width: 100%;
-
     }
 
     .imgApp img {
         border-radius: 6px 6px 0px 0px;
-
         height: 100%;
         width: 100%;
     }
@@ -223,11 +295,12 @@
     }
 
     .info h2 {
-        font-size: 1.3rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .info p {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
 }

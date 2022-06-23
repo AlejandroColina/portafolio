@@ -9,7 +9,7 @@ function Nav() {
 
   let transitionNavBar = () => {
 
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 50) {
       setNav(true)
     } else {
       setNav(false)
@@ -22,26 +22,32 @@ function Nav() {
   }, [])
 
   return (
-    <nav className={nav ? styles.navbar2 : styles.navbar1}>
+    <nav className={nav
+      ? `transition-all duration-1000 ease-in-out delay-700
+      fixed top-0 z-20
+      w-screen h-12
+      bg-[#e9ecefd5]
+      hidden
+      sm:flex sm:justify-center sm:items-center            
+      pl-2 sm:pl-4 md:pl-8
+      `
+      : `hidden`}>
 
-      <section className={styles.linkSection}>
+      <section className="">
         <ul className={styles.list}>
-          <Link className={styles.link} to="#Landing" >{`<Alejandro />`}</Link>
-          <Link className={styles.link} to="#About" > About me</Link>
-          <Link className={styles.link} to="#Projects" > Projects</Link>
-          <Link className={styles.link} to="#Footer" > Footer</Link>
+          <Link className="text-base md:text-sm no-underline font-light hover:underline mx-4 md:mx-2" to="#Landing" ><b>{`<Alejandro />  `}</b></Link>
+          <Link className="text-base md:text-sm no-underline font-light hover:underline mx-4 md:mx-2" to="#About" >Sobre mí</Link>
+          <Link className="text-base md:text-sm no-underline font-light hover:underline mx-4 md:mx-2" to="#Projects" >Proyectos</Link>
+          <Link className="text-base md:text-sm no-underline font-light hover:underline mx-4 md:mx-2" to="#Certifications" >Certificaciones</Link>
         </ul>
       </section>
 
-      <section className={styles.tempSection}>
-        <div className={styles.temp}>
-          <p className={styles.wordsTemp}>Min {parseInt(weather.temp_min)}
-            °c - Máx
-            {parseInt(weather.temp_max)}°c</p>
-        </div>
-        <div className={styles.location}>
-          <p className={styles.wordsLocation}>{location.city}, {location.country_code_iso3}</p>
-        </div>
+      <section className="flex flex-col mr-8 md:mr-10 lg:mr-12">
+        <p className="text-base sm:text-sm text-center font-light">Min {parseInt(weather.temp_min)}
+          °c - Máx
+          {parseInt(weather.temp_max)}°c</p>
+
+        <p className="text-base sm:text-sm text-center font-light">{location.city}, {location.country_code_iso3}</p>
       </section>
 
     </nav>
