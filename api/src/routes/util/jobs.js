@@ -37,6 +37,7 @@ let infoCards = [
 ]
 
 let certificados = [
+    'https://res.cloudinary.com/dojsvmsif/image/upload/v1656113943/Personal/full-stack_wuuhah.jpg',
     'https://res.cloudinary.com/dojsvmsif/image/upload/v1655492581/Personal/3_tdtsgk.jpg',
     'https://res.cloudinary.com/dojsvmsif/image/upload/v1655492581/Personal/4_a9qe6e.jpg',
     'https://res.cloudinary.com/dojsvmsif/image/upload/v1655492581/Personal/6_iur1nj.jpg',
