@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Persona, Mensaje } = require('../db');
+const { Persona, Mensaje, DescriptionV } = require('../db');
 router.use(express.json());
 
 router.post('/', async (req, res, next) => {
