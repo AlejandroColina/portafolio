@@ -15,19 +15,23 @@ function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getLocation());
-    dispatch(sumVisitors());
   }, [dispatch]);
 
   const { location } = useSelector(state => state);
+
   useEffect(() => {
     dispatch(getWeather(location.city))
-    dispatch(postVisitors({
-      description: window.navigator.userAgent,
-      city_visitor: location.city,
-      ip_visitor: location.ip
-    }))
+    setTimeout(() => {
+      dispatch(sumVisitors());
+      dispatch(postVisitors({
+        description: window.navigator.userAgent,
+        city_visitor: location.city,
+        ip_visitor: location.ip
+      }))
+    }, 10000)
     setTimeout(() => { dispatch(getVisitors()); }, 2000)
   }, [dispatch, location.city, location.ip]);
+
   return (
     <div className="h-full w-full">
       <Route exact path='/' >
