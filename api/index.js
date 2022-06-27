@@ -1,5 +1,6 @@
 const { sequelize, Admin } = require('./src/db');
 const server = require('./src/app');
+// const { CORS_URL } = process.env;
 
 sequelize.sync({ force: true })
     .then(async () => {

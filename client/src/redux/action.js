@@ -3,6 +3,7 @@ import { LOCATION, WEATHER, INFO_CARDS, CLOSE_SESION, CERTIFICADOS, NUM_VISITORS
 import axios from 'axios';
 import swal from 'sweetalert2';
 
+// const API_PORTAFOLIO = 'https://portfolio-alejandro-colina.herokuapp.com/'
 const API_PORTAFOLIO = 'http://localhost:3001'
 const API_LOCATION = 'https://ipapi.co/json/';
 

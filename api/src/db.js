@@ -2,13 +2,20 @@ require('dotenv').config();
 const { Sequelize, DataTypes } = require('sequelize');
 const fs = require('fs');
 const path = require('path');
+// const { DATABASE_URL, API_KEY } = process.env;
 const { DB_USER, DB_PASSWORD, DB_HOST, API_KEY } = process.env;
 const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/disenio`, {
     logging: false,
     native: false,
     define: {
         timestamps: false
-    }
+    },
+    // dialectOptions: {
+    //     ssl: {
+    //         require: true,
+    //         rejectUnauthorized: false
+    //     }
+    // }
 });
 
 const basename = path.basename(__filename);
