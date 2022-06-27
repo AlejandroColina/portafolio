@@ -6,6 +6,7 @@ const notice = require('./routes/notice');
 const cards = require('./routes/cards');
 const certificados = require('./routes/certificados');
 const visitors = require('./routes/visitors');
+const admin = require('./routes/validateUser');
 server.use(express.json());
 server.use(cors());
 
@@ -14,5 +15,6 @@ server.use('/notice', notice);
 server.use('/cards', cards);
 server.use('/certificates', certificados);
 server.use('/visitors', visitors);
+server.use('/admin', admin);
 
 module.exports = server;

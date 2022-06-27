@@ -47,11 +47,11 @@ const Mensaje = sequelize.define('Mensaje', {
     }
 });
 
-const { DescriptionV, NumVisitors } = sequelize.models;
+const { DescriptionV, NumVisitors, Admin } = sequelize.models;
 
 Persona.hasMany(Mensaje, { foreignKey: 'id_persona' });
 Mensaje.belongsTo(Persona, { foreignKey: 'id_persona' });
 
 module.exports = {
-    sequelize, Persona, Mensaje, API_KEY, NumVisitors, DescriptionV
+    sequelize, Persona, Mensaje, API_KEY, NumVisitors, DescriptionV, Admin
 }

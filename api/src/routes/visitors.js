@@ -20,23 +20,21 @@ router.get('/', async (req, res, next) => {
     }
 });
 
-router.post('/data-v', async (req, res, next) => {
+router.get('/num-v', async (req, res, next) => {
     try {
+        let consulta = await NumVisitors.findByPk(1);
 
-        if (!req.body.description || !req.body.description.length === 0
-            || !req.body.ip_visitor || !req.body.ip_visitor.length === 0
-            || !req.body.city_visitor || !req.body.city_visitor.length === 0
-        ) return res.status(404).send({ msg: 'error, faltan datos.' })
-
-        await DescriptionV.create(req.body);
-        return res.send({ msg: 'Creado.' })
+        consulta == null
+            ? res.status(404).send({ msg: 'No hay información.' })
+            : res.json(consulta.dataValues.num)
 
     } catch (error) {
         next(error)
     }
 });
 
-router.get('/num-v', async (req, res, next) => {
+
+router.get('/sum-v', async (req, res, next) => {
     try {
 
         let numV = await NumVisitors.findByPk(1);
@@ -62,5 +60,20 @@ router.get('/num-v', async (req, res, next) => {
     }
 });
 
+router.post('/data-v', async (req, res, next) => {
+    try {
+
+        if (!req.body.description || !req.body.description.length === 0
+            || !req.body.ip_visitor || !req.body.ip_visitor.length === 0
+            || !req.body.city_visitor || !req.body.city_visitor.length === 0
+        ) return res.status(404).send({ msg: 'error, faltan datos.' })
+
+        await DescriptionV.create(req.body);
+        return res.send({ msg: 'Creado.' })
+
+    } catch (error) {
+        next(error)
+    }
+});
 
 module.exports = router;

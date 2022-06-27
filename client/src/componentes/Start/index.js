@@ -88,7 +88,7 @@ function LandingP() {
                             >
                                 Más sobre mí
                             </Link>
-                        </div>
+                       </div>
                     </div>
                 </div>
 
